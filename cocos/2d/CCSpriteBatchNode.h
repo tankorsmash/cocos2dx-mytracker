@@ -221,6 +221,7 @@ public:
      * It add the sprite to the children and descendants array, but it doesn't update add it to the texture atlas
      */
     SpriteBatchNode * addSpriteWithoutQuad(Sprite *child, int z, int aTag);
+    void reserveCapacity(ssize_t newCapacity);
     
 CC_CONSTRUCTOR_ACCESS:
     /**

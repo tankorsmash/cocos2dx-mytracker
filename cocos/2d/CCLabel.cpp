@@ -770,6 +770,11 @@ bool Label::alignText()
         {
             return true;
         }
+        /* josh edit*/
+       if (_batchNodes.size()==1)
+        _batchNodes.at(0)->reserveCapacity(_utf16Text.size());
+        /* josh edit*/
+
         _reusedLetter->setBatchNode(_batchNodes.at(0));
         
         _lengthOfString = 0;
