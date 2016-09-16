@@ -1324,7 +1324,7 @@ void EventDispatcher::sortEventListenersOfSceneGraphPriority(const EventListener
     log("-----------------------------------");
     for (auto& l : *sceneGraphListeners)
     {
-        log("listener priority: node ([%s]%p), priority (%d)", typeid(*l->_node).name(), l->_node, _nodePriorityMap[l->_node]);
+        log("listener priority: node ([%s]%p), priority (%d)", typeid(*l->_node).name(), l->_layout, _nodePriorityMap[l->_layout]);
     }
 #endif
 }
