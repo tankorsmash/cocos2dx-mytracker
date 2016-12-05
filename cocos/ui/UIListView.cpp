@@ -82,7 +82,7 @@ void ListView::setItemModel(Widget *model)
 {
     if (nullptr == model)
     {
-        CCLOG("Can't set a nullptr to item model!");
+        //CCLOG("Can't set a nullptr to item model!"); //josh commented out
         return;
     }
     CC_SAFE_RELEASE_NULL(_model);
